@@ -1,0 +1,69 @@
+.knitting {
+  min-height: 300px;
+  border-top: 1px solid @gray;
+}
+.knitting__caption {
+  min-height: 176px;
+  background-color: #f1f1f1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  & h1 {
+    font-size: 29px;
+    line-height: 30px;
+    font-weight: bold;
+  }
+}
+.knitting__description {
+  padding: 0 30px;
+  & p {
+    margin-top: 22px;
+    font-size: 13px;
+    line-height: 24px;
+    color: #444444;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .knitting {
+    min-height: 224px;
+  }
+  .knitting__caption {
+    min-height: 229px;
+    background-image: url("../img/bg-zigzag-fill.svg");
+    background-position: bottom;
+    background-repeat: repeat-x;
+    background-size: auto 23px;
+    & h1 {
+      font-size: 46px;
+    }
+  }
+  .knitting__description {
+    padding: 45px 50px;
+    & p {
+      font-size: 18px;
+      line-height: 30px;
+    }
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .knitting {
+    min-height: 282px;
+  }
+  .knitting__caption {
+    min-height: 266px;
+    background-size: auto 30px;
+    & h1 {
+      font-size: 57px;
+      margin-top: -22px;
+    }
+  }
+  .knitting__description {
+    min-height: 123px;
+    & p {
+      margin: 0 225px;
+      margin-top: 63px;
+    }
+  }
+}

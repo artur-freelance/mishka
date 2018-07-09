@@ -1,0 +1,32 @@
+@import url("reset.less");
+@import url("variables.less");
+@import url("blocks/main-nav.less");
+@import url("blocks/main-header.less");
+@import url("blocks/featured.less");
+@import url("blocks/about.less");
+@import url("blocks/reviews.less");
+@import url("blocks/contacts.less");
+@import url("blocks/footer.less");
+@import url("blocks/catalog-header.less");
+@import url("blocks/catalog-main.less");
+@import url("blocks/knitting.less");
+@import url("blocks/form-wrapper.less");
+@import url("blocks/modal.less");
+
+.wrapper {
+  margin: 0 auto;
+  font-family: "Open Sans", Arial, sans-serif;
+  width: 320px;
+}
+
+@media (min-width: @tablet-width) {
+  .wrapper {
+    width: @tablet-width;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .wrapper {
+    width: @desktop-width;
+  }
+}

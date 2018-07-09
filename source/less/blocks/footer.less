@@ -1,0 +1,91 @@
+.footer {
+  min-height: 160px;
+  padding: 0 30px;
+  background: #f1f1f1;
+    & a {
+      text-decoration: none;
+    }
+}
+
+.social {
+  min-height: 80px;
+  border-bottom: 1px solid #e5e5e5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.social__links {
+  margin: 20px;
+  &:hover path {
+    fill: #46c1ae;
+  }
+  &:active path {
+    opacity: 0.3;
+  }
+}
+
+.academy {
+  min-height: 80px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  & span {
+    font-size: 19px;
+    line-height: 18px;
+    font-weight: bold;
+    margin-right: 30px;
+    color: black;
+  }
+  &:hover path {
+    fill: #46c1ae;
+  }
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.mishka {
+  display: none;
+}
+
+@media (min-width: @tablet-width) {
+  .footer {
+    min-height: 143px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .mishka {
+    display: inline;
+    margin-left: 20px;
+    width: 102px;
+    height: 34px;
+    background-image: url("../img/logo-mobile.svg");
+    background-size: cover;
+    &:hover {
+      background-image: url("../img/logo-mobile-hover.svg");
+    }
+    &:active {
+      opacity: 0.3;
+    }
+  }
+
+  .social {
+    margin-left: 72px;
+  }
+
+  .academy {
+    margin-right: 12px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .footer {
+    padding: 0 30px;
+    margin: 0 50px;
+    margin-top: -10px;
+  }
+}

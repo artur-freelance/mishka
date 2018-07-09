@@ -1,0 +1,166 @@
+.contacts {
+  padding: 35px 30px 0;
+  & h2 {
+    font-size: 20px;
+    line-height: 30px;
+    font-weight: bold;
+    margin-bottom: 26px;
+  }
+}
+
+.contacts__data {
+  display: flex;
+  flex-direction: column;
+  font-size: 15px;
+  line-height: 30px;
+  color: #444444;
+  & div {
+    display: flex;
+  }
+  & div:first-child {
+    margin-bottom: 30px;
+  }
+  & span:first-child {
+    margin-right: 33px;
+  }
+}
+
+.contacts a {
+  color: black;
+  text-decoration-color: #444444;
+
+  &:hover {
+    color: #46c1ae;
+  }
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.contacts__map {
+  height: 457px;
+  background: url("../img/map-mobile@1x.jpg") no-repeat;
+  @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+    background-image: url("../img/map-mobile@2x.jpg");
+  }
+  margin-top: 65px;
+  margin-left: -30px;
+  margin-right: -30px;
+
+  & iframe {
+    width: 100%;
+  }
+}
+
+.contacts__write-us {
+  .button();
+  font-size: 18px;
+  margin: 38px 0;
+}
+
+@media (min-width: @tablet-width) {
+  .contacts {
+    display: flex;
+    flex-direction: column;
+    min-height: 870px;
+    padding: 65px 45px 0;
+    position: relative;
+      & h2 {
+        font-size: 43px;
+        line-height: 50px;
+        margin-bottom: 52px;
+      }
+
+    & h2::after {
+      content: url("../img/icon-flag.svg");
+      position: absolute;
+      right: 53px;
+      top: 52px;
+    }
+  }
+
+  .contacts__data {
+    flex-direction: row;
+    font-size: 18px;
+    margin-bottom: 59px;
+    & div:first-child {
+      margin-right: 53px;
+    }
+    & div span:first-child {
+      width: 83px;
+      margin-right: 0;
+    }
+    & div span:last-child {
+      width: 200px;
+    }
+  }
+
+  .contacts__map {
+    background-image: url("../img/map-tablet@1x.jpg");
+    @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+      background-image: url("../img/map-tablet@2x.jpg");
+    }
+    margin: 0 -45px 17px;
+
+    & iframe {
+      width: 100%;
+    }
+  }
+
+  .contacts__write-us {
+    width: 230px;
+    align-self: center;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .contacts {
+    min-height: 580px;
+    margin: 0 100px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    & h2 {
+      font-size: 54px;
+      margin-top: 30px;
+    }
+    & h2::after {
+      left: 63px;
+      top: 133px;
+    }
+  }
+  .contacts__info {
+    width: 28%;
+    padding: 49px 127px;
+    padding-right: 0;
+  }
+  .contacts__data {
+    font-size: 18px;
+    width: 310px;
+    flex-direction: column;
+    & div:first-child {
+      margin-bottom: 30px;
+    }
+    & a {
+      margin-left: 22px;
+    }
+  }
+  .contacts__map {
+    width: 530px;
+    height: 457px;
+    margin-left: auto;
+    background-image: url("../img/map-desktop@1x.jpg");
+    @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+      background-image: url("../img/map-desktop@2x.jpg");
+    }
+
+    & iframe {
+      width: 530px;
+      height: 457px;
+    }
+  }
+  .contacts__write-us {
+    position: absolute;
+    left: 176px;
+    bottom: 77px;
+  }
+}

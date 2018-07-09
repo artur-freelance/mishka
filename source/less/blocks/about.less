@@ -1,0 +1,128 @@
+.about {
+  min-height: 822px;
+  padding: 0 30px;
+}
+
+.about__caption {
+  font-size: 25px;
+  line-height: 30px;
+  font-weight: bold;
+}
+
+.advantages__list {
+  display: flex;
+  flex-direction: column;
+  font-size: 17px;
+  line-height: 20px;
+  font-weight: bold;
+  margin: 8px 0;
+  &::before {
+  }
+  &:first-child::before {
+    content: "";
+    width: 32px;
+    height: 38px;
+    background-image: url("../img/icon-feature-flower.svg");
+    background-repeat: no-repeat;
+    margin: 20px 0;
+  }
+  &:nth-child(2)::before {
+    content: "";
+    width: 47px;
+    height: 28px;
+    background-image: url("../img/icon-feature-money.svg");
+    background-repeat: no-repeat;
+    margin: 20px 0;
+  }
+  &:nth-child(3)::before {
+    content: "";
+    width: 34px;
+    height: 28px;
+    background-image: url("../img/icon-feature-heart.svg");
+    background-repeat: no-repeat;
+    margin: 20px 0;
+  }
+  &:nth-child(4)::before {
+    content: "";
+    width: 35px;
+    height: 35px;
+    background-image: url("../img/icon-feature-ball.svg");
+    background-repeat: no-repeat;
+    margin: 20px 0;
+  }
+  &:nth-child(5)::before {
+    content: "";
+    width: 55px;
+    height: 24px;
+    background-image: url("../img/icon-feature-rocket.svg");
+    background-repeat: no-repeat;
+    margin: 20px 0;
+  }
+  &:last-child::before {
+    content: "";
+    width: 33px;
+    height: 33px;
+    background-image: url("../img/icon-feature-gift.svg");
+    background-repeat: no-repeat;
+    margin: 20px 0;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .about {
+    min-height: 584px;
+    padding: 3px 50px;
+  }
+  .advantages {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .about__caption {
+    font-size: 43px;
+    line-height: 50px;
+    margin-bottom: 18px;
+  }
+  .advantages__list {
+    width: 330px;
+    min-height: 105px;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 26px;
+    padding-bottom: 5px;
+
+      &::before {
+        padding-left: 6px;
+      }
+
+      &:nth-child(2) {
+        order: 3;
+      }
+      &:nth-child(3) {
+        order: 5;
+      }
+      &:nth-child(4) {
+        order: 2;
+      }
+      &:nth-child(5) {
+        order: 4;
+      }
+      &:nth-child(6) {
+        order: 6;
+      }
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .about {
+    min-height: 592px;
+    padding: 5px 272px;
+  }
+  .about__caption {
+    font-size: 54px;
+    line-height: 50px;
+  }
+  .advantages__list {
+    padding-bottom: 9px;
+    margin-right: 20px;
+  }
+}
